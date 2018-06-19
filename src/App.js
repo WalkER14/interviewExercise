@@ -13,7 +13,6 @@ class App extends Component {
               <TopOptions/>
               <Cards/>
           </div>
-
       </div>
     );
   }

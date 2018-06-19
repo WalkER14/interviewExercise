@@ -8,7 +8,13 @@
     width: 80px ;
     font-size: 0.75em;
 }
-
+.topComponent button {
+    float: none;
+    text-align: left;
+    height: 100%;
+    margin: 0;
+    padding: 14px;
+}
 a {
     text-decoration: none;
 }
