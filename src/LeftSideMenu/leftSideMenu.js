@@ -19,8 +19,8 @@ const ButtonContainer = (props) =>
     </div>;
 
 const Button = (props) =>
-    <button class="btn">
-        <i className={props.icon}></i>
+    <button className="btn">
+        <i className={props.icon}/>
         {props.text}
     </button>;
 
