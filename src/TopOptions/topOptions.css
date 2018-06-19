@@ -1,0 +1,22 @@
+.queryButton {
+    padding: 15px;
+    background-color: #F92172;
+    border-radius: 25px;
+    color: #FFF;
+    margin-left: 20px;
+    height: 30px;
+    width: 80px ;
+    font-size: 0.75em;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    height: 30px;
+}
+
+div {
+    width: 500px;
+}

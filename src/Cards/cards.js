@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import exampleData from '../example.data';;
+import exampleData from '../example.data';
 
 
 const CardTags = (props) =>
-    <div className="tags">
+    <div className="cardTags">
         <i src={props.tagIcon}/><span>{props.tag}</span>
     </div>;
 
