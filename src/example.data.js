@@ -83,6 +83,7 @@ const exampleData = {
     ]
         ,
     aboutUs: {
+        copyright:"© ",
         title: "CO 2018",
         text: "BlueOceanTech"
     }

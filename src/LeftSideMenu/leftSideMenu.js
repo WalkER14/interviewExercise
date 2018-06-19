@@ -47,7 +47,8 @@ const Link = (props) =>
 
 const AboutUs = (props) =>
     <div className="aboutUs">
-        <strong>{props.title}</strong>
+
+        <strong><strong id="copyright">{props.copyright}</strong>{props.title}</strong>
         <span>{props.text}</span>
     </div>;
 
@@ -59,7 +60,7 @@ class LeftSideMenu extends Component {
                 <Logo logo={exampleData.logo}/>
                 <ButtonContainer buttons={exampleData.menuButtons}/>
                 <LinkSectionContainer linksSections={exampleData.linksSections}/>
-                <AboutUs title={exampleData.aboutUs.title} text={exampleData.aboutUs.text}/>
+                <AboutUs copyright={exampleData.aboutUs.copyright} title={exampleData.aboutUs.title} text={exampleData.aboutUs.text}/>
             </div>
         );
     }
