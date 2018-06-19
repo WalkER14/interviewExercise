@@ -17,7 +17,7 @@ const CardContent = (props)=>
 
 const Card = (props)=>
     <div className="card">
-        <img alt="" src={require('../assets/images/image1.png')}/>
+        <img alt="" src={props.img}/>
         <CardContent tagIcon={props.tagIcon} header={props.header} sub={props.sub} text={props.text}/>
     </div>;
 

@@ -10,7 +10,7 @@ const exampleData = {
     title: "example data",
     logo: "",
     cards:[{
-      img:'../assets/images/image1.png',
+      img:require('./assets/images/image1.png'),
       tagIcon:"",
       tag:"JOB",
       header:"Director of Data Science",
