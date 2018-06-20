@@ -1,0 +1,72 @@
+.centerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.queryButton {
+  padding: 15px;
+  background-color: #F92172;
+  border-radius: 25px;
+  color: #FFF;
+  margin-left: 1.2%;
+  width: 15%;
+  max-width: 15%;
+  font-size: 0.63em; }
+
+.topComponent {
+  display: flex;
+  flex-direction: row;
+  height: 4.3%;
+  width: 98%;
+  margin-top: 7%; }
+
+.searchBar {
+  background: #FFFFFF;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%; }
+  .searchBar select {
+    padding-left: 10px;
+    width: 15%;
+    display: flex;
+    box-shadow: none;
+    border: none;
+    flex-direction: row;
+    background: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: 0.75em;
+    outline: none;
+    color: grey; }
+  .searchBar input {
+    width: 80%;
+    height: 100%;
+    margin-left: 1%;
+    box-shadow: none;
+    border: none;
+    background: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.75em;
+    outline: none; }
+  .searchBar button {
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    text-align: left;
+    height: 100%;
+    margin: 0;
+    padding: 14px; }
+    .searchBar button i {
+      position: relative;
+      left: 60%;
+      height: 50%;
+      transform: translate(-50%, -40%);
+      display: block; }
+
+/*# sourceMappingURL=topOptions.css.map */

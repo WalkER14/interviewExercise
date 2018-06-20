@@ -17,7 +17,7 @@ const exampleData = {
       text: exampleText
     },
     {
-        img:"../assets/images/image1.png",
+        img:require('./assets/images/image1.png'),
         tagIcon:"",
         tag:"JOB",
         header:"Director of Data Science & Analytics",
@@ -25,7 +25,7 @@ const exampleData = {
         text: exampleText
     },
         {
-            img:"../assets/images/image1.png",
+            img:require('./assets/images/image1.png'),
         tagIcon:"",
     tag:"JOB",
     header:"Marketing Director & Interface",
@@ -33,7 +33,7 @@ const exampleData = {
     text: exampleText
 },
         {
-            img:"../assets/images/image1.png",
+            img:require('./assets/images/image1.png'),
             tagIcon:"",
             tag:"JOB",
             header:"Senior Designer UX Experience",
@@ -41,7 +41,7 @@ const exampleData = {
             text: exampleText
         },
         {
-            img:"../assets/images/image1.png",
+            img:require('./assets/images/image1.png'),
             tagIcon:"",
             tag:"JOB",
             header:"Senior Marketing Consultant",
@@ -52,10 +52,10 @@ const exampleData = {
       searchExample: {keyword:'Discover'},
       buttons:[
           {
-              text:'ADD JOB'
+              text:'POST JOB'
           },
           {
-              text:'ADD EVENT'
+              text:'POST EVENT'
           }
       ]
     },

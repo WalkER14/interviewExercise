@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import exampleData from '../example.data';
+import exampleData from '../../example.data';
+import './cards.css'
 
 
 const CardTags = (props) =>
@@ -10,7 +11,7 @@ const CardTags = (props) =>
 const CardContent = (props)=>
     <div className="cardContent">
         <CardTags tagIcon={props.tagIcon}/>
-        <h2>{props.header}</h2>
+        <h3>{props.header}</h3>
         <span>{props.sub}</span>
         <p>{props.text}</p>
     </div>;

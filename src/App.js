@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import LeftSideMenu from "./LeftSideMenu/leftSideMenu";
-import Cards from "./Cards/cards";
-import TopOptions from "./TopOptions/topOptions";
+import LeftSideMenu from "./Components/LeftSideMenu/leftSideMenu";
+import Cards from "./Components/Cards/cards";
+import TopOptions from "./Components/TopOptions/topOptions";
 
 class App extends Component {
   render() {

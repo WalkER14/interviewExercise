@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './leftSideMenu.css';
-import exampleData from '../example.data';
+import exampleData from '../../example.data';
 
 
 const Logo = (props) =>
     <div className="logoContainer">
-        <img src={props.logo}/>
+        <img src={require('../../assets/images/logo.png')}/>
     </div>;
 
 const ButtonContainer = (props) =>
@@ -19,10 +19,11 @@ const ButtonContainer = (props) =>
     </div>;
 
 const Button = (props) =>
-    <button className="btn">
-        <i className={props.icon}/>
-        {props.text}
-    </button>;
+        <figure className="btn">
+            <img src={require('../../assets/images/icono4.png')} alt="Trulli"/>
+                <figcaption>{props.text}</figcaption>
+        </figure>;
+
 
 const LinkSectionContainer = (props) =>
     <div className="linkSectionContainer">
@@ -47,7 +48,6 @@ const Link = (props) =>
 
 const AboutUs = (props) =>
     <div className="aboutUs">
-
         <strong><strong id="copyright">{props.copyright}</strong>{props.title}</strong>
         <span>{props.text}</span>
     </div>;

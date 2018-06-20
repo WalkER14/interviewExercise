@@ -1,8 +1,7 @@
 .leftSideMenu{
     height: 100%;
-    border: solid crimson;
     background-color: #FFFFFF;
-    width: 110px;
+    width: 22%;
 }
 
 .linksSection{
@@ -27,4 +26,22 @@
 }
 #copyright{
     font-size: 1.5em !important;
+}
+
+.btn{
+   display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.btn:hover{
+    border-left: solid 5px #F92172;
+}
+
+.logoContainer{
+    border: 1px solid red;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
