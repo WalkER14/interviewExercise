@@ -6,21 +6,20 @@
 }
 
 .queryButton {
-  padding: 15px;
   background-color: #F92172;
   border-radius: 25px;
   color: #FFF;
   margin-left: 1.2%;
-  width: 15% ;
-  max-width: 15% ;
-  font-size: 0.63em;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 0.55em;
 }
 
 .topComponent {
   display: flex;
   flex-direction: row;
-  height: 4.3%;
-  width: 98%;
+  height: 4%;
+  width: 98.5%;
   margin-top: 7%;
 }
 
@@ -34,7 +33,7 @@
   & {
     select{
       padding-left: 10px;
-      width: 15%;
+      width: 18%;
       display: flex;
       box-shadow: none;
       border: none;

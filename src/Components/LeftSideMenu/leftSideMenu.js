@@ -5,7 +5,7 @@ import exampleData from '../../example.data';
 
 const Logo = (props) =>
     <div className="logoContainer">
-        <img src={require('../../assets/images/logo.png')}/>
+        <i className="material-icons">cloud</i>
     </div>;
 
 const ButtonContainer = (props) =>
@@ -19,10 +19,10 @@ const ButtonContainer = (props) =>
     </div>;
 
 const Button = (props) =>
-        <figure className="btn">
-            <img src={require('../../assets/images/icono4.png')} alt="Trulli"/>
-                <figcaption>{props.text}</figcaption>
-        </figure>;
+        <a className="btn" href="#">
+            <i className="material-icons">cloud</i>
+                {props.text}
+        </a>;
 
 
 const LinkSectionContainer = (props) =>

@@ -5,7 +5,7 @@ import './cards.css'
 
 const CardTags = (props) =>
     <div className="cardTags">
-        <i src={props.tagIcon} className="material-icons">{props.tagIcon}</i>
+        <i className="material-icons">{props.tagIcon}</i>
         <span>{props.tag}</span>
     </div>;
 
