@@ -1,64 +1,74 @@
 .leftSideMenu {
   height: 100%;
+  display: block;
   background-color: #FFFFFF;
   width: 8%; }
   .leftSideMenu a {
     text-decoration: none;
     color: black; }
 
-.linksSection {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 1%;
-  font-size: 0.7vw;
-  font-weight: 300; }
-
-.linkSectionContainer {
-  margin-left: 15%; }
-
-.aboutUs {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-size: 0.7vw;
-  font-weight: 300;
-  margin: 1% 15%;
-  letter-spacing: 0px; }
-
-.buttonsContainer {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  width: 100%;
-  height: 58.5%;
-  font-size: 0.8vw;
-  margin-top: 20%; }
-
-.btn {
-  display: flex;
-  flex-direction: column;
-  float: right;
-  border-left: solid 5px #FFFFFF;
-  width: 90%;
-  margin: 7% 0% 7%;
-  font-weight: 300; }
-  .btn i {
-    font-size: 3vw; }
-  .btn:hover {
-    border-left: solid 5px #F92172; }
-
 .logoContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-top: 33%;
-  font-size: 20%; }
+  margin-top: 28.5%;
+  height: 10%; }
   .logoContainer i {
-    font-size: 3vw; }
+    font-size: 5.5vh; }
+
+.buttonsContainer {
+  display: block;
+  float: left;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  font-size: 0.8vw; }
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  border-left: solid 5px #FFFFFF;
+  width: 90%;
+  margin-bottom: 3.7vh;
+  font-weight: 300; }
+  .btn i {
+    font-size: 5.5vh; }
+  .btn:hover {
+    border-left: solid 5px #F92172; }
+
+.linkSectionContainer {
+  display: inline-block;
+  border: 1px solid violet;
+  margin-top: 100%;
+  margin-left: 13%; }
+
+.linksSection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 1%;
+  font-size: 0.7vw;
+  font-weight: 300; }
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: left;
+  font-size: 0.7vw;
+  font-weight: 300;
+  margin-left: 13%;
+  align-self: flex-end !important; }
+  .aboutUs span {
+    margin-bottom: -0.6%; }
 
 #copyright {
-  font-size: 1.1vw !important; }
+  font-size: 0.9vw !important; }
+
+#copyrightText {
+  font-size: 0.7vw !important;
+  font-weight: 700; }
 
 /*# sourceMappingURL=leftSideMenu.css.map */

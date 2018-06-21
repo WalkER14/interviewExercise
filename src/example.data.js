@@ -4,73 +4,73 @@ const exampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing sed...";
 
 const exampleData = {
     title: "example data",
-    logo: "",
+    logo: "explore",
     cards:[{
         img:require('./assets/images/image1.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
         header:"Director of Data Science",
         sub:"STANFORD, CT BY SPECTRUM",
         text: exampleText
     },{
         img:require('./assets/images/image2.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
-        header:"Director of Data Science & Analytics",
+        header:"Director, Data Science & Analytics",
         sub:"STANFORD, CT BY SPECTRUM",
         text: exampleText
     },{
         img:require('./assets/images/image3.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
         header:"Marketing Director & Interface",
         sub:"STANFORD, CT BY SPECTRUM",
         text: exampleText
     },{
         img:require('./assets/images/image4.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
         header:"Senior Designer UX Experience",
         sub:"STANFORD, CT BY SPECTRUM",
         text: exampleText
     },{
         img:require('./assets/images/image1.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
         header:"Senior Marketing Consultant",
         sub:"STANFORD, CT BY SPECTRUM",
         text: exampleText
     },{
         img:require('./assets/images/image2.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
         header:"Senior Marketing Consultant",
         sub:"STANFORD, CT BY SPECTRUM",
         text: exampleText
     },{
         img:require('./assets/images/image3.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
         header:"Senior Marketing Consultant",
         sub:"STANFORD, CT BY SPECTRUM",
         text: exampleText
     },{
         img:require('./assets/images/image4.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
         header:"Senior Marketing Consultant",
         sub:"STANFORD, CT BY SPECTRUM",
         text: exampleText
     },{
         img:require('./assets/images/image1.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
         header:"Senior Marketing Consultant",
         sub:"STANFORD, CT BY SPECTRUM",
         text: exampleText
     },{
         img:require('./assets/images/image2.png'),
-        tagIcon:"cloud",
+        tagIcon:"print",
         tag:"JOB",
         header:"Senior Marketing Consultant",
         sub:"STANFORD, CT BY SPECTRUM",
@@ -90,15 +90,15 @@ const exampleData = {
 
     menuButtons: [
         {
-            icon:"",
+            icon:"store",
             text:"Events"
         },
         {
-            icon:"",
+            icon:"explore",
             text:"Jobs"
         },
         {
-            icon:"",
+            icon:"backup",
             text:"Community"
         }
     ],

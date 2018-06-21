@@ -5,7 +5,7 @@ import exampleData from '../../example.data';
 
 const Logo = (props) =>
     <div className="logoContainer">
-        <i className="material-icons">cloud</i>
+        <i className="material-icons">{props.logo}</i>
     </div>;
 
 const ButtonContainer = (props) =>
@@ -20,7 +20,7 @@ const ButtonContainer = (props) =>
 
 const Button = (props) =>
         <a className="btn" href="#">
-            <i className="material-icons">cloud</i>
+            <i className="material-icons">{props.icon}</i>
                 {props.text}
         </a>;
 
@@ -48,11 +48,12 @@ const Link = (props) =>
 
 const AboutUs = (props) =>
     <div className="aboutUs">
-        <strong><strong id="copyright">{props.copyright}</strong>{props.title}</strong>
+        <span id="copyrightText"><span id="copyright">{props.copyright}</span>{props.title}</span>
         <span>{props.text}</span>
     </div>;
 
 class LeftSideMenu extends Component {
+
     render() {
         return (
             <div className="leftSideMenu">

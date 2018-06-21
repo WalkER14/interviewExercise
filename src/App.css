@@ -56,8 +56,8 @@ div {
 }
 .contentContainer{
   margin-left: 2.3%;
-  overflow: hidden;
-  width: 42%;
+  overflow-x: visible!important;
+  width: 42.5%;
 }
 
 .App{

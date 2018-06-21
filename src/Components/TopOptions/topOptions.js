@@ -29,11 +29,9 @@ class TopOptions extends Component {
     constructor(props)
     {
         super(props);
-        this.state = {searchQuery: 'Discover',};
-
+        this.state = { searchQuery: 'Discover'};
         this.onChangeQuery = this.onChangeQuery.bind(this)
     }
-
     onChangeQuery(event){
         this.setState( {searchQuery: event.target.value} );
     }

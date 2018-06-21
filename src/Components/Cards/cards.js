@@ -34,7 +34,6 @@ const CardsContainer  = (props)=>
     </div>;
 
 class Cards extends Component {
-
     render() {
         return (
             <CardsContainer cards={exampleData.cards}/>
