@@ -8,7 +8,7 @@ const TopComponent = (props) =>
         <SearchComponent topComponent={props.topComponent}/>
         {
             props.buttons.map((button,i) =>
-                    <a className="queryButton centerContent" key={i} href="#">{button.text}</a>
+                    <button className="queryButton centerContent" key={i}>{button.text}</button>
             )
         }
     </div>;
@@ -21,7 +21,7 @@ const SearchComponent = (props) =>
             <option value="few">few</option>
         </select>
         <input className="" type="text" value={props.topComponent.state.searchQuery} onChange={props.topComponent.onChangeQuery} />
-        <button className="searchButton" type="submit"><i className="fa fa-search"/></button>
+        <button className="searchButton centerContent" type="submit"><i className="fa fa-search"/></button>
     </div>;
 
 class TopOptions extends Component {

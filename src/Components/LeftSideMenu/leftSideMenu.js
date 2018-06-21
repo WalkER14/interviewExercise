@@ -53,7 +53,6 @@ const AboutUs = (props) =>
     </div>;
 
 class LeftSideMenu extends Component {
-
     render() {
         return (
             <div className="leftSideMenu">
