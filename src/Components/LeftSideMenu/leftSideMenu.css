@@ -31,9 +31,9 @@
   flex-direction: column;
   align-content: center;
   width: 100%;
-  height: 55%;
+  height: 58.5%;
   font-size: 0.8vw;
-  margin-top: 10%; }
+  margin-top: 20%; }
 
 .btn {
   display: flex;
@@ -41,7 +41,7 @@
   float: right;
   border-left: solid 5px #FFFFFF;
   width: 90%;
-  margin: 5% 0% 5%;
+  margin: 7% 0% 7%;
   font-weight: 300; }
   .btn i {
     font-size: 3vw; }

@@ -19,7 +19,9 @@ const CardContent = (props)=>
 
 const Card = (props)=>
     <div className="card">
-        <img alt="" src={props.img}/>
+        <div className="cardImgContainer">
+            <img alt="" src={props.img}/>
+        </div>
         <CardContent tagIcon={props.tagIcon} tag={props.tag} header={props.header} sub={props.sub} text={props.text}/>
     </div>;
 
