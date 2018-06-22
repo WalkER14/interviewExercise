@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import exampleData from '../../example.data';
 import './cards.css'
 
 
@@ -36,7 +35,7 @@ const CardsContainer  = (props)=>
 class Cards extends Component {
     render() {
         return (
-            <CardsContainer cards={exampleData.cards}/>
+            <CardsContainer cards={this.props.cards}/>
         );
     }
 }

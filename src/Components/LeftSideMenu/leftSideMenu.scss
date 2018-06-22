@@ -1,6 +1,7 @@
 .leftSideMenu{
   height: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
   width: 8%;
   & a{
@@ -38,23 +39,25 @@
   & i{
     font-size: 5.5vh;
   }
-  &:hover{
-    border-left: solid 5px #F92172;
-  }
+}
+.linkActive{
+  border-left: solid 5px #F92172;
 }
 .linkSectionContainer{
+  position: relative;
   display: inline-block;
-  border: 1px solid violet;
-  margin-top: 100%;
-  margin-left: 13%;
 }
 .linksSection{
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-top:1%;
+  margin-top:0.7vh;
   font-size: 0.7vw;
   font-weight: 300;
+  & a{
+    margin-top: 0px;
+    margin-bottom:0.1vh;
+  }
 }
 .aboutUs{
   display: flex;
@@ -63,8 +66,7 @@
   text-align: left;
   font-size: 0.7vw;
   font-weight: 300;
-  margin-left:13%;
-  align-self:flex-end !important;
+  margin-top: 1.5%;
 
   & span {
     margin-bottom: -0.6%;
@@ -74,6 +76,13 @@
   font-size: 0.9vw !important;
 }
 #copyrightText{
-  font-size: 0.7vw !important;
+  font-size: 0.67vw !important;
   font-weight: 700;
+}
+
+.footerContainer{
+  width: 100%;
+  top:23.8%;
+  margin-left: 12%;
+  position: relative;
 }

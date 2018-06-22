@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './topOptions.css'
-import exampleData from '../../example.data';
 
 
 const TopComponent = (props) =>
@@ -38,7 +37,7 @@ class TopOptions extends Component {
 
     render(){
         return(
-            <TopComponent buttons={exampleData.topOptions.buttons} topComponent={this}/>
+            <TopComponent buttons={this.props.buttons} topComponent={this}/>
         );
     }
 }

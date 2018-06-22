@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './leftSideMenu.css';
-import exampleData from '../../example.data';
 
 
 const Logo = (props) =>
@@ -9,18 +8,18 @@ const Logo = (props) =>
     </div>;
 
 const ButtonContainer = (props) =>
-    <div className="buttonsContainer">
+    <div  className="buttonsContainer">
         {
             props.buttons.map((button,i)=>
-                <Button key={i} icon={button.icon} text={button.text}/>
+                <Button  sideMenu={props.sideMenu} functionOnClick={props.functionOnClick} id={i} key={i} icon={button.icon} text={button.text}/>
             )
 
         }
     </div>;
 
 const Button = (props) =>
-        <a className="btn" href="#">
-            <i className="material-icons">{props.icon}</i>
+        <a onClick={ props.functionOnClick } id={props.id} className={props.sideMenu.state.Active[props.id] ? "btn linkActive": "btn"} href="#">
+            <i id={props.id} className="material-icons">{props.icon}</i>
                 {props.text}
         </a>;
 
@@ -53,14 +52,29 @@ const AboutUs = (props) =>
     </div>;
 
 class LeftSideMenu extends Component {
+    constructor(props)
+    {
+        super(props);
+        this.state = { Active: [false,true,false] };
+        this.addActiveClass= this.addActiveClass.bind(this);
+    }
+    addActiveClass(event) {
+        let newActiveArray = [false,false,false];
+        newActiveArray[event.target.id] = true;
+        this.setState({
+            Active:newActiveArray,
+        });
+    }
 
     render() {
         return (
             <div className="leftSideMenu">
-                <Logo logo={exampleData.logo}/>
-                <ButtonContainer buttons={exampleData.menuButtons}/>
-                <LinkSectionContainer linksSections={exampleData.linksSections}/>
-                <AboutUs copyright={exampleData.aboutUs.copyright} title={exampleData.aboutUs.title} text={exampleData.aboutUs.text}/>
+                <Logo logo={this.props.leftOptions.logo}/>
+                <ButtonContainer sideMenu={this} functionOnClick={this.addActiveClass} buttons={this.props.leftOptions.menuButtons}/>
+                <div className="footerContainer">
+                    <LinkSectionContainer linksSections={this.props.leftOptions.linksSections}/>
+                    <AboutUs copyright={this.props.leftOptions.aboutUs.copyright} title={this.props.leftOptions.aboutUs.title} text={this.props.leftOptions.aboutUs.text}/>
+                </div>
             </div>
         );
     }

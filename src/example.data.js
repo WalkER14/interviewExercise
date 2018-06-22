@@ -3,8 +3,6 @@
 const exampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing sed...";
 
 const exampleData = {
-    title: "example data",
-    logo: "explore",
     cards:[{
         img:require('./assets/images/image1.png'),
         tagIcon:"print",
@@ -87,33 +85,35 @@ const exampleData = {
           }
       ]
     },
-
-    menuButtons: [
-        {
-            icon:"store",
-            text:"Events"
-        },
-        {
-            icon:"explore",
-            text:"Jobs"
-        },
-        {
-            icon:"backup",
-            text:"Community"
+    leftOptions: {
+        logo: "explore",
+        menuButtons: [
+            {
+                icon: "store",
+                text: "Events"
+            },
+            {
+                icon: "explore",
+                text: "Jobs"
+            },
+            {
+                icon: "backup",
+                text: "Community"
+            }
+        ],
+        linksSections: [
+            ['About Us', 'Contact Us']
+            ,
+            ['Comunity', 'Organizations']
+            ,
+            ['Privacy Police', 'Cookie Police', 'Data Privacy']
+        ]
+        ,
+        aboutUs: {
+            copyright: "© ",
+            title: "CO 2018",
+            text: "BlueOceanTech"
         }
-    ],
-    linksSections: [
-        ['About Us','Contact Us']
-        ,
-        ['Comunity','Organizations']
-        ,
-        ['Privacy Police','Cookie Police', 'Data Privacy']
-    ]
-        ,
-    aboutUs: {
-        copyright:"© ",
-        title: "CO 2018",
-        text: "BlueOceanTech"
     }
 
 };
