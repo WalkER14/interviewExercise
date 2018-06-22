@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './topOptions.css'
 
 
+/*
+*TopComponent: Creates a TopComponent with a searchComponent and two buttons
+*@param: {Object} text the text to display in the buttons
+*returns: {Object} A SearchComponent component
+*/
 const TopComponent = (props) =>
     <div className="topComponent">
         <SearchComponent topComponent={props.topComponent}/>
@@ -11,7 +16,13 @@ const TopComponent = (props) =>
             )
         }
     </div>;
-
+/*
+*SearchComponent: Creates a SearchComponent with a searchBar a select and a button when the value of
+ the search bar changes the function onChangeQuery is triggered
+*@param: {Object} searchQuery the value to display in the search bar and the keyword for the search
+*@param: {Function} onChangeQuery the function to execute when the value of the searchBar changes
+*returns: {Object} A SearchComponent component
+*/
 const SearchComponent = (props) =>
     <div className="searchBar">
         <select>
@@ -31,6 +42,13 @@ class TopOptions extends Component {
         this.state = { searchQuery: 'Discover'};
         this.onChangeQuery = this.onChangeQuery.bind(this)
     }
+
+    /*
+    *onChangeQuery: When the value of the SearchComponent
+    *changes set the value of the searchQuery in the state
+    *to the new value of the SearchComponent
+    *@param: {Object} event the event triggered
+    */
     onChangeQuery(event){
         this.setState( {searchQuery: event.target.value} );
     }
